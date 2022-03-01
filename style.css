@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Smooch+Sans:wght@600&display=swap');
+*{
+    font-family: emoji;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(27, 27, 27);
+}
+h1{
+    color: transparent rebeccapurple;
+    font-size: 50px;
+    display: flex;
+}
+h1 span{
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s* var(--i));
+}
+@keyframes animate{
+    0%
+    {
+        color:rgb(255, 0, 0);
+        filter: blur(-5px) hue-rotate(45deg);
+        text-shadow: 0 0 70px red;
+        text-shadow: 0 0 100px red;
+        text-shadow: 0 0 120px red;
+        text-shadow: 0 0 150px #00ff6a;
+        text-shadow: 0 0 200px#00ff4c;
+        text-shadow: 0 0 300px #0026ff;
+        text-shadow: 0 0 400px #0026ff;
+        text-shadow: 0 0 500px #0026ff;
+        text-shadow: 0 0 600px #0026ff;
+        text-shadow: 0 0 700px #0026ff;
+        text-shadow: 0 0 800px #0026ff;
+        text-shadow: 0 0 900px #0026ff;
+        text-shadow: 0 0 1000px #0026ff;
+
+    }
+    30%,70%{
+        color:red;
+        filter: blur(0px) hue-rotate(360deg);
+        text-shadow: 0 0 20px #dfe3e6;
+        text-shadow: 0 0 40px #ff0000;
+        text-shadow: 0 0 80px #ffd900;
+        text-shadow: 0 0 120px #ff00aa;
+        text-shadow: 0 0 200px #00ff40;
+        text-shadow: 0 0 300px #0026ff;
+        text-shadow: 0 0 400px #0026ff;
+        text-shadow: 0 0 500px #0026ff;
+
+    }
+    100%{
+        color: transparent;
+        box-shadow: none;
+        filter: blur(0px) hue-rotate(360deg);
+
+    }
+
+}
