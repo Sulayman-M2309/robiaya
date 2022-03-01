@@ -18,7 +18,7 @@ h1{
     display: flex;
 }
 h1 span{
-    animation: animate 2s linear infinite;
+    animation: animate 5s linear infinite;
     animation-delay: calc(0.1s* var(--i));
 }
 @keyframes animate{
